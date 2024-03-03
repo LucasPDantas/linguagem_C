@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+    setlocale(LC_ALL, "");
+
+    //Definindo uma variável
+    int a = 5, b;
+
+    //Imprimindo a variável "a"
+    printf("A = %d", a);
+
+    //Concatenando
+    printf("\nO valor da variável A é: %d", a);
+
+    //Mudando o valor de "a"
+    a = 15;
+
+    //Concatenando
+    printf("\nO valor da variável A agora é: %d \n\n", a);
+
+    //Lendo valores
+    printf("Digite o valor para B: ");
+    scanf("%d", &b);
+
+    //Concatenando
+    printf("O valor da variável B é: %d", b);
+
+    //Pula linhas
+    printf("\n\n");
+
+    //Imprimindo
+    printf("Uhuu...");
+    printf("\n");
+
+    //Pausando
+    system("pause");
+
+}
