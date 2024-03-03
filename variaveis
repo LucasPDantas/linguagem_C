@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+    setlocale(LC_ALL, "");
+
+    //LENDO VALOR INTEIRO
+    int a = 50;
+    printf("o valor de A é = %d \n", a);
+    scanf("%d", &a);    //o "&" significa endereço na memória, "scanf" vai ler uma várial inteira digitada no teclado
+    printf("o valor de A mudou para %d \n\n", a);
+
+    //LENDO VALOR QUEBRADO
+    float b = 5.13;
+    printf("o valor de B é = %f \n", b);
+    scanf("%f", &b);
+    printf("o valor de B mudou para %f \n\n", b);
+
+    //LENDO LETRAS
+    char letra = 'L';
+    printf("a letra é = %c \n", letra);
+    fflush(stdin);  //"fflush": antes de ler uma variavel "char", tem que limpar o lixo acumudado na memória
+    scanf("%c", &letra);
+    printf("a letra mudou para %c \n", letra);
+}
